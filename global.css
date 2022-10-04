@@ -1,0 +1,145 @@
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0, 100, 200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0, 80, 160);
+}
+
+label {
+	display: block;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+
+
+
+@font-face {
+	font-family: Anton;
+	src: url("../Anton-Regular.ttf");
+	font-weight: bold;
+}
+
+body {
+	user-select: none;
+
+	--color-highlight: #ff9539;
+	--color-grey-dark: #18181b;
+	--color-grey-medium: #28282e;
+	--color-grey-medium-trans: #28282e20;
+	--color-grey-light: rgb(76, 76, 83);
+	--color-orange: #f69b6c;
+	--color-blue: #70cedf;
+	--color-cream: #f5edda;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-grey-dark);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-grey-light);
+	border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-grey-light);
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+::-webkit-resizer {
+	background: var(--color-grey-light);
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+
+input,
+textarea {
+	color: white;
+
+	vertical-align: middle;
+
+	margin: 0.2rem;
+	background-color: var(--color-grey-light);
+
+	border: 0;
+	border-radius: 0.4rem;
+	resize: none;
+}
+
+button {
+	background-color: var(--color-grey-medium);
+	color: white;
+	border: .1rem solid var(--color-grey-light);
+	border-radius: 0.4rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+	outline: 0.1rem solid var(--color-highlight);
+}
