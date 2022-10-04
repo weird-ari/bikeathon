@@ -52,9 +52,13 @@
 <main>
     <box
         id="timerbox"
-        class:paused={currentTime > 300000}
         class:finished={currentTime === 0}
-        style="animation-duration:{Math.max(currentTime / 60000, 1)}s"
+        style="{currentTime > 300000
+            ? ''
+            : 'animation-name: blinking;'} animation-duration:{Math.max(
+            currentTime / 60000,
+            1
+        )}s"
     >
         <time>
             <segment class="hours">
@@ -168,17 +172,7 @@
 
         overflow: hidden;
 
-        animation: blinking 2s ease-in-out infinite;
-    }
-
-    @keyframes blinking {
-        0% {
-        }
-        50% {
-            border-color: var(--color-highlight);
-        }
-        100% {
-        }
+        animation: none 2s ease-in-out infinite;
     }
 
     time {

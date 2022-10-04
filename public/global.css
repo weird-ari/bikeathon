@@ -70,7 +70,7 @@ button:focus {
 
 @font-face {
 	font-family: Anton;
-	src: url("../Anton-Regular.ttf");
+	src: url("Anton-Regular.ttf");
 	font-weight: bold;
 }
 
@@ -142,4 +142,14 @@ button {
 input:focus-visible,
 textarea:focus-visible {
 	outline: 0.1rem solid var(--color-highlight);
+}
+
+@keyframes blinking {
+	0% {}
+
+	50% {
+		border-color: var(--color-highlight);
+	}
+
+	100% {}
 }
